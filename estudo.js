@@ -3,6 +3,18 @@ function total(){
   let c = document.getElementById("valor").value;
   let j = document.getElementById("juros").value;
   let t = document.getElementById("meses").value;
+  if (!Number(c)){
+    alert("O valor do capital deve ser um número.");
+    let c = document.getElementById("valor").value;"";
+    let c = document.getElementById("valor").focus();
+    return
+  }
+  if (!Number(j)){
+    alert("O valor do capital deve ser um número.");
+    let c = document.getElementById("juros").value;"";
+    let c = document.getElementById("juros").focus();
+    return
+  }
   let r = 0;
   for(let i = 1; i <= t; i++){
       r = c * (1 + (j/100));
@@ -48,6 +60,11 @@ function subtracao(){
         let r = Number(val1) * Number(p);
         document.getElementById("resultado").innerHTML =r;
         }
+  
+
+
+
+
   
 
 
