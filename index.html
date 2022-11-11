@@ -12,17 +12,22 @@
 
 <body>
     <input type="checkbox" id="input-calcFin">
+
     <div class="calc">
-        <label for="input-calcFin"><h3>Financeira</h3>
-        <div id="spTotal">
-            <span id="total">R$: 0,00</span>
-        </div>
-        Capital: <input id="capital" placeholder="R$ ??" type="text"><br>
-        Juros mensais: <input id="juros" placeholder="% ??" type="text"><br>
-        Quantidade de meses: <input id="meses" placeholder="Tempo ??" type="text"><br>
-        <button onclick="total()">Calcular</button>
-        <div id="spLista">
-            <span id="listaMes"></span>
+        <label for="input-calcFin">
+            <h3>Financeira</h3>
+        </label>
+        <div class="calcF">
+            <div id="spTotal">
+                <span id="total">R$: 0,00</span>
+            </div>
+            Capital: <input id="capital" placeholder="R$ ??" type="text"><br>
+            Juros mensais: <input id="juros" placeholder="% ??" type="text"><br>
+            Quantidade de meses: <input id="meses" placeholder="Tempo ??" type="text"><br>
+            <button onclick="total()">Calcular</button>
+            <div id="spLista">
+                <span id="listaMes"></span>
+            </div>
         </div>
     </div>
 </body>
@@ -60,4 +65,23 @@
 </body>
 
 </html>
-</div>
+
+ <input type="checkbox" id="input-calcesg">
+
+    <div class="calcE">
+        <label for="input-calcESG">
+            <h3>Equação Segundo Grau</h3>
+        </label>
+        <div class="calcEq">
+            <div id="spRaiz">
+                <span id="raiz">x1:? e x2:?</span>
+            </div>
+            <input id="a" placeholder="a" type="text"><br>
+            <input id="b" placeholder="b" type="text"><br>
+            <input id="c" placeholder="c" type="text"><br>
+            <button onclick="calculaRaiz()">Calcular</button>
+            <div id="spLista">
+                <span id="listaMes"></span>
+            
+        </div>
+    </div>
